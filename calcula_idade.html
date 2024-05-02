@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var ano_atual = window.prompt("Em que ano nós estamos?");
+            var ano_nasc = window.prompt("Em que ano você nasceu?");
+
+            if(ano_atual == 2024 && ano_nasc < 2024){
+                var idade = (ano_atual - ano_nasc);
+                window.alert("Sua idade é: "+idade);
+            } else {
+                window.alert("Dados inválidos.");
+            }   
+
+            
+
+        </script>
+    </body>
+</html>

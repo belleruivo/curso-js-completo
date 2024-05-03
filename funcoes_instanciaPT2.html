@@ -12,19 +12,42 @@
                 this.idade = 17;
                 this.printNome = function(nome){
                     alert(nome);
+                };
+                this.returnAnimal = function(animal){
+                    return animal;
                 }
             }
 
-            function Animal(nome, peso){
-                this.nome = nome;
-                this.peso = peso;
+            function Animal(){
+                this.nome = "cachorro";
+                this.raca = "pug";
             }
 
-            animal = new Animal();
+            var pessoa = new Pessoa();  
 
-            alert(animal.nome)
+            var animal = new Animal();
 
+            animal.raca = "outra";
 
+            alert(pessoa.returnAnimal(animal).raca);
+
+            // function Animal(nome, peso){
+
+            //     if(nome == undefined){
+            //         nome = "Gato";
+            //     }
+
+            //     if(peso == undefined) {
+            //         peso = "6kg";
+            //     }
+
+            //     this.nome = nome;
+            //     this.peso = peso;
+            // }
+
+            // animal = new Animal('cachorro');
+
+            // alert(animal.nome); 
 
             // animal2 = new Animal("Cachorro", "7kg");
 

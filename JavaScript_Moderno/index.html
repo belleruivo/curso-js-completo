@@ -1,0 +1,89 @@
+<html>
+    <body>
+        <script>
+            // TEMPLATE STRING
+            // var conteudo = `Lorem ipsum`;
+            // console.log(conteudo);
+
+            // var nome = 'isabelle';
+            // var conteudo = `
+            //     O nome é ${nome}`;
+
+            // console.log(conteudo);
+
+            // BLOCK SCOPE
+            // É mais pra trabalhar de forma local, use e abuse do let 
+
+            // {
+            //     // vai ficar definido apenas nesse escopo
+            //     let nome = 'guilherme';
+
+            //     let testes = function(){
+            //          console.log('ola');
+            //     }
+
+            //     testes();
+
+            // }
+
+            // ARROW FUNCTIONS
+
+            // const testes = (parametro)=>{
+            //     alert(parametro);
+            // }
+
+            // testes('ola');
+
+
+            // const testes = (texto,parametro)=>{
+            //     parametro(texto);
+            // }
+
+            // testes(()=>{
+            //     alert('ola mundo');
+            // });
+
+            // testes('Olá, mundo!',(texto)=>{
+            //     alert(texto);
+            // });
+
+            // DESTRUCTURE FEATURE
+
+            // const arr = ['guilherme', 'joao', 'felipe', 'isa', 'julia', 'pedro'];
+
+            // const [a,b,...c] = arr;
+            // alert(c[0]);
+
+            // REST E SPREAD
+            // spread
+
+            // var nomes = [
+            //     {
+            //         nome:'isa'
+            //     },
+            //     {
+            //         nome:'pedro'
+            //     }
+            // ]
+
+            // const objetos = [...nomes,{
+            //     nome:'guilherme'
+            // }];]
+            // console.log(objetos);
+
+
+            // rest
+
+            function testes(...numeros){
+                console.log(numeros);
+                // console.log(numeros[0][0]);
+            }
+
+            testes(1,2,3,4,5,6);
+            // testes([1,2,3,4,5,6]);
+         
+
+
+        </script>
+    </body>
+</html>

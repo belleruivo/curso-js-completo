@@ -1,12 +1,42 @@
 <html>
     <body>
-        <div id="box"></div>
+        <!-- <section id="box"></section> -->
+        <section class="box"></section>
+        <section class="box"></section>
+        <section class="box"></section>
+        <section class="box"></section>
+        <section class="box"></section>
+        <section class="box"></section>
+
     </body>
     <script>
-            var el = document.getElementById('box');
-            el.style.width = 100; 
-            el.style.height = 100;
-            el.style.backgroundColor = 'red';
-            el.style.marginLeft = 200;
+            // var el = document.getElementById('box');
+            // el.style.width = 100; 
+            // el.style.height = 100;
+            // el.style.backgroundColor = 'red';
+            // el.style.marginLeft = 200;
+
+            var elements = document.getElementsByClassName('box');
+            
+            // var el = elements[0]
+
+            // el.style.width = 100; 
+            // el.style.height = 100;
+            // el.style.backgroundColor = 'blue';
+            // el.style.marginLeft = 200;
+
+            for(var i=0; i<elements.length; i++){
+                var el = elements[i];
+
+                el.style.width = 100; 
+                el.style.height = 100;
+                el.style.backgroundColor = 'blue';
+                el.style.marginLeft = 200;
+
+                el.style.marginTop = 10;
+                el.style.borderWidth = 1;
+                el.style.borderColor = 'red';
+                el.style.borderStyle = 'solid';
+            }
     </script>
-</html>
+</html> 

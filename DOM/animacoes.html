@@ -1,0 +1,36 @@
+<html>
+
+    <style>
+        .caixa {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin-left: 0;
+        }
+        .animaEsquerda{
+            transition: 1s;
+            margin-left: 90px;
+            margin-top: 20px;
+            background-color: green;
+        }
+    </style>
+
+    <body>
+
+        <section class="caixa"></section>
+
+    </body>
+
+    <script>
+        var caixa = document.querySelectorAll('.caixa')[0];
+        // setTimeout(()=>{
+        //     caixa.classList.add('animaEsquerda');
+        // },1000)
+
+        // milisegundos o 1000 = 1 segundo
+
+        caixa.addEventListener('click', function(){ //ou ()=>{}
+            caixa.classList.add('animaEsquerda');
+        });
+    </script>
+</html> 

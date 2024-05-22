@@ -1,0 +1,45 @@
+<html>
+
+    <style>
+        .conteudo h2 span {
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        .conteudo p{
+            overflow: hidden;
+            height: 0;
+            transition: 1s;
+        }
+        .exibir {
+            height: 200px !important;
+        }
+    </style>
+
+    <body>
+
+        <section class="conteudo">
+            <h2>Titulo do conteudo <span>Ver mais...</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum auctor tristique. Aliquam erat volutpat. Sed elementum facilisis eleifend. Morbi efficitur sodales viverra. Pellentesque laoreet accumsan tellus a vulputate. Nam semper nibh mollis metus imperdiet sodales. Cras accumsan aliquam dui, a aliquam tellus ornare vitae. Phasellus venenatis pellentesque feugiat. Maecenas ut ipsum pretium, gravida ante quis, suscipit massa. Vivamus semper sagittis elementum. In quis velit et elit tincidunt ultricies. Nunc vel tempus felis, ut sodales mi.
+            </p>
+        </section>
+
+    </body>
+
+    <script>
+        var span = document.querySelector('.conteudo span')
+
+        span.addEventListener('click', ()=>{
+            var conteudo = document.querySelector('.conteudo p');
+
+            if(conteudo.classList.contains('exibir')){
+                span.innerHTML = ('Ver mais...');
+                conteudo.classList.remove('exibir');
+            } else {
+                span.innerHTML = ('Ver menos...');
+                conteudo.classList.add('exibir');
+            }
+        });
+
+    </script>
+</html> 

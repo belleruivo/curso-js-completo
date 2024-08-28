@@ -7,19 +7,27 @@
 </head>
     <body>
         <script>
-            // var = variavel global
-            // let = variavel no escopo
-            // const = constante
+            // var = VARIÁVEL GLOBAL
+            // let = VARIÁVEL NO ESCOPO
+            // const = CONSTANTE
+
+            // A var pode ser editada
 
             // var nome = "Isabelle";
             // nome = "João";
+
+            // A let não pode ser editada   
+            // Se eu colocar o console.log(idade) fora do escopo, vai dar erro
             // {
             //     let idade = 17;
             //     console.log(idade);
+            //     console.log(nome); 
             // }
 
+            // A const não pode ser editada nem reatribuida
+
             // const nome = "Guilherme";
-            // nome = "João"; --> nao da para editar pois é constante
+            // nome = "João"; --> Não se pode alterar uma constante, se o valor for fixo use Const, para não ocupar memória a toa
             // console.log(nome);
 
             var numero = 27;
@@ -29,7 +37,7 @@
             
             var texto = "O texto é: "+nome;
             
-            console.log("O seu nome é: "+nome);
+            console.log(texto);
 
         </script>
     </body>

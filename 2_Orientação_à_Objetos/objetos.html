@@ -7,17 +7,21 @@
     </head>
     <body>
         <script>
-            var pessoas = [{
-                'nome':'isabelle',
-                'idade':27,
-                'profissao':'tester' 
-            },
-            {
-                'nome':'julio',
-                'idade':43,
-                'profissao':'dev' 
-            
-            },
+            // Aqui temos um array de objetos
+            var pessoas = [
+                
+                {
+                    'nome':'isabelle',
+                    'idade': 27,
+                    'profissao':'tester' 
+                },
+                {
+                    'nome':'julio',
+                    'idade': 43,
+                    'profissao':'dev' 
+                
+                },
+
             ];
 
             var noticias = [{
@@ -26,8 +30,8 @@
             }
             ];
 
-
-            window.alert(noticias[0].titulo);
+            // Acessando o array de objetos, com o nome e o indice do objeto
+            window.alert(pessoas[1].nome);
 
         </script>
     </body>

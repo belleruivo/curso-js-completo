@@ -7,12 +7,17 @@
     </head>
     <body>
         <script>
-            var num = [0, 1, 2];
-            // for(var i = 0; i < num.length; i++){
-            //     console.log(num[i]);
-            // }
+            // forEach: usado para interagir em arrays ou objetos
+            var num = ["isa", "pedro", "joao"];
+
+            // length é o tamanho do array
+            for(var i = 0; i < num.length; i++){
+                // i são os valores em si
+                console.log(num[i]);
+            }
+
             num.forEach(function(value, index){
-                console.log(value);
+                console.log(index);
             })
 
         </script>

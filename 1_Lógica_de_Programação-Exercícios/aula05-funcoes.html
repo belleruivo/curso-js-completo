@@ -8,31 +8,33 @@
     <body>
         <script>
         // Funções
-        function testes() {
-        // executado quando chamar a função
-            console.log("Chamando a função testes");
-        }
+        // function testes() {
+        // // executado quando chamar a função
+        //     console.log("Chamando a função testes");
+        // }
 
-        function testes2(nome, idade) {
-            console.log("O nome passado é: "+nome);
-            console.log("O nome passado é: "+idade);
-            console.log("------------------");
-        }
+        // testes();
 
-        testes2("João", 23);
-        testes2("Isa", 24);
+        // function testes2(nome, idade) {
+        //     console.log("O nome passado é: "+nome);
+        //     console.log("A idade passada é: "+idade);
+        //     console.log("------------------");
+        // }
+
+        // testes2("João");
+        // testes2("Isa", 24);
 
         function pegarNome(parametro){
             if(parametro == 1){
                 return "Guilherme";
-                // se eu inserisse um console.log  aqui não iria funcionar, pois a partir que dá um return, a função é finalizada.
+                // se eu inserisse um console.log aqui não iria funcionar, pois a partir que dá um return, a função é finalizada.
             }else{
-                return "Outro nome";
+                return "Julia";
             }
         }
 
         // 1 é o parâmetro, se eu insiro qualquer outro número ele vai pro else.
-        var nome = pegarNome(2);
+        var nome = pegarNome(1);
         console.log(nome);
            
         </script>

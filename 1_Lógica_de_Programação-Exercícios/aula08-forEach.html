@@ -8,16 +8,17 @@
     <body>
         <script>
             // forEach: usado para interagir em arrays ou objetos
-            var num = ["isa", "pedro", "joao"];
+            var nome = ["isa", "pedro", "joao"];
 
             // length é o tamanho do array
-            for(var i = 0; i < num.length; i++){
-                // i são os valores em si
-                console.log(num[i]);
-            }
+            // for(var i = 0; i < nome.length; i++){
+            //     // i são os valores em si
+            //     // dentro do loop, nome[i] acessa o elemento do array naquele indice
+            //     console.log(nome[i]);
+            // }
 
-            num.forEach(function(value, index){
-                console.log(index);
+            nome.forEach(function(value, index){
+                console.log(index, value);
             })
 
         </script>

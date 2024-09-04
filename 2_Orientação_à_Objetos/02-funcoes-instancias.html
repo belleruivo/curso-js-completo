@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            function Pessoa(){
+                //this -> isso
+                //this.nome é uma variável (atributos), que estamos deixando pra esse objeto em questão, basicamente, em todas as linguagens que possuem POO, tem o this
+                //Por ser POO, se fosse var nome iria dar erro
+                this.nome = "Isabelle";
+                this.idade = 18;
+                this.profissao = "Tester";
+            };
+
+            var pessoa = new Pessoa(); //criando um novo objeto chamado pessoa
+            var pessoa2 = new Pessoa();
+
+            // esse pessoa.nome é acessível, se você quiser atribuir outro nome você pode
+            pessoa.nome = "Julia";
+            pessoa2.nome = "Julia2";
+
+            //pessoa.idade = 23;
+            //pessoa.profissao = "Dev";
+
+            alert(pessoa.nome);
+            alert(pessoa2.nome);
+
+            //alert(pessoa.idade); 
+            //alert(pessoa.profissao); 
+
+        </script>
+    </body>
+</html>

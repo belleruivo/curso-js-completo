@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            //Forma mais antiga - bem raiz do Js
+            // PRIMEIRA PARTE DA AULA:
+
+            /*function Pessoa(){
+                this.nome = "Isabelle";
+                this.idade = 17;
+                // criando uma função que interage com o que existe dentro desse objeto
+                // se quiser, pode passar um parâmetro que vai funcionar da mesma forma ali em function, como um número e aí trocaria o this (removendo o this, e deixano só o parametro) e o colocaria o parâmetro dentro do printNome
+                this.printNome = function(numero){
+                    alert(numero);
+                };
+
+                //this.returnAnimal = function(animal){
+                    //return animal;
+                //}
+            }
+
+            function Animal(){
+                this.nome = "Cachorro";
+                this.raca = "Pug";
+            }
+
+            var pessoa = new Pessoa(); // Quando a gente instancia um objeto aqui, podemos fazer ele interagir com outro, criando um var pessoa_2
+            var pessoa_2 = new Pessoa(); // O pessoa_2 é outro objeto e ele tem as mesmas coisas que o outro objeto, porém você pode trocar o nome
+            
+            pessoa_2.nome = "Pedro";
+
+            pessoa.printNome(pessoa_2.nome);*/
+
+            // SEGUNDA PARTE DA AULA: (muito útil)
+
+            /*function Pessoa(){
+                this.nome = "Isabelle";
+                this.idade = 17;
+                this.printNome = function(numero){
+                    alert(numero);
+                };
+            }
+
+            // Agora temos o Pessoa e Animal pra instanciar
+            // Pra instanciar esse objeto a gente consegue passar direto o parâmetro de nome ali na função e o = ser igual ao parâmetro
+            function Animal(nome, peso){
+                this.nome = nome;
+                this.peso = peso;
+            }
+
+            animal = new Animal("Cachorro", "10Kg");
+            animal2 = new Animal("Gato", "4Kg");
+            
+            alert("O animal é: "+animal.nome+", e seu peso é de: "+animal.peso)
+            alert(animal2.nome)*/
+
+            // TERCEIRA PARTE DA AULA:
+           
+             /*function Pessoa(){
+                this.nome = "Isabelle";
+                this.idade = 17;
+                this.printNome = function(numero){
+                    alert(numero);
+                };
+
+                //this.returnAnimal = function(animal){
+                    //return animal;
+                //}
+            }
+
+            // Agora, vamos supor que não passamos nenhum parâmetro nesse objeto do Animal que criamos
+            function Animal(nome, peso){
+                // Aqui vai a validação 
+                if(nome == undefined){
+                    nome = "Tartaruga";
+                }
+                if(peso == undefined) {
+                    peso = "4kg";
+                }
+
+                this.nome = nome;
+                this.peso = peso;
+            }*/
+
+            // E mesmo com a validação, se por algum motivo você quiser inserir um parâmetro na instância você pode, e ele será priorizado
+            //animal = new Animal("Coelho");
+            
+            // Então podemos validar as informações:
+            //alert(animal.nome); 
+
+            // QUARTA PARTE DA AULA:
+            
+            function Pessoa(){
+                this.nome = "Isabelle";
+                this.idade = 17;
+                this.printNome = function(numero){
+                    alert(numero);
+                };
+
+                //Criamos outra função
+                this.returnAnimal = function(animal){
+                    return animal;
+                }
+            }
+
+            function Animal(){
+                this.nome = "Peixe";
+                this.raca = "Salmão";
+            }
+
+            var pessoa = new Pessoa();
+
+            var animal = new Animal();
+
+            // O mais interessante é que se você alterar algum atributo ou propriedade, ele muda também
+            animal.raca = "Merluza"; 
+            
+            alert("O animal é: "+pessoa.returnAnimal(animal).nome+", e sua raça é: "+pessoa.returnAnimal(animal).raca); 
+
+            //Mas em resumo o que aconteceu? - Isso vale para todas as linguagens de programaçãoss
+            //pegamos o .pessoa que instanciamos, chamamos a função do returnAnimal e passamos o animal como parâmetro que criamos ali no var animal e a gente retorna ele mesmo, sendo assim, depois que chamamos esse método, temos acesso ao próprio objeto animal
+
+        </script>
+    </body>
+</html>

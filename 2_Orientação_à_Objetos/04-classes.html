@@ -7,21 +7,45 @@
     </head>
     <body>
         <script>
+            // essa class animal é como se fosse aquela funcion animal
+            // class é a forma correta de trabalhar com POO
+            // class Animal{
+                // O método construtor: toda vez que a gente instancia (criar classe ou objeto), poderiamos passar algum parametro ali
+                // constructor(nome){
+                //     this.nome = nome;
+                // }
+                // esse printNome, apesar de ser uma "função", em POO chamamos ele de método
+            //     printNome(){
+            //         return this.nome;
+            //     }
+            // }
+
+            // animal = new Animal('Gato');
+            // alert(animal.nome);
+            // alert(animal.printNome());
+
+            // EXTENDS:
+
+            // o extends na POO significa "Declara essa classe aqui e herda tudo que tem na classa animal, como print nome, os atributos vão pro cachorro e tal, o cachorro tb tem essa classe, quando a classe pai animal exige um parametro pra ser passado, a gente é obrigado a fazer isso tb na classe filha, passando o pug"
+            // o super invoca o construtor da classe pai
+            // o construtor podemos passar um parametro 
+            // ali o printNome é considerado um método
+            // extends é para uma class extender a outra, quantas vezes quiser
+            // no front end não costuma utilizar isso
             class Animal{
                 constructor(nome){
                     this.nome = nome;
                 }
-
                 printNome(){
                     return this.nome;
                 }
-
             }
-
-            class Cachorro extends Animal {
+            
+            class Cachorro extends Animal{
                 constructor(nome){
                     super(nome);
-                    this.raca = "buldog";
+                    // é possível inserir novos atributos
+                    this.raca = "Rotweiller";
                 }
 
                 printRaca(){
@@ -29,20 +53,11 @@
                 }
             }
 
-            cachorro = new Cachorro("bob"); 
+            // aqui nao poderia ser vazio, pq a classe pai exige um parametro
+            cachorro = new Cachorro("Bob");
 
             alert(cachorro.printNome());
-            alert(cachorro.printraca());
-
-            // alert(animal.printNome());
-
-            // o extends na POO significa "Oh, declara essa classe aqui e herda tudo que tem na classa animal, como print nome e tal, o cachorro tb tem essa classe, quando a classe pai animal exige um parametro pra ser passado, a gente é obrigado a fazer isso tb na classe filha, passando o pug"
-            // o super invoca o construtor da classe pai
-            // o construtor podemos passar um parametro 
-            // ali o printNome é considerado um método
-
-
-            // animal = new Animal('gato');
+            alert(cachorro.printRaca());
 
         </script>
     </body>

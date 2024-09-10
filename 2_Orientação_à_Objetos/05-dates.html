@@ -8,26 +8,31 @@
     <body>
         <script>
             // var date = new Date();
+
             // Dia do mês!
             // alert(date.getDate());
-            // Dia da semana (0 a 1)
+
+            // Dia da semana (0 a 6)
             // alert(date.getDay());
+
             // Ano
             // alert(date.getFullYear());
+
             // Horário
             // alert(date.getHours());
             // alert(date.getMinutes());
 
-            var date = new Date('05/09/2024');
+            // Trabalhando um pouco mais com a manipulação de datas
+            // Vamos calcular a diferênça entre duas datas
+            var date = new Date('11/09/2024');  
+            // alert(date.getDate());
+            var date2 = new Date('11/11/2024'); 
 
-            var date2 = new Date('05/11/2024');
-
+            // alert(date.getTime()); temos ela em Milisegundos = 1000
+    
             var diferenca_datas = (date2.getTime() - date.getTime()) / (1000 * 3600 * 24);
 
             alert(diferenca_datas);
-
-
-
 
         </script>
     </body>

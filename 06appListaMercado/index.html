@@ -1,0 +1,99 @@
+<html>
+    <body>
+        <head>
+            <style>
+                * {
+                    box-sizing: border-box;
+                    padding: 0;
+                    margin: 0;
+                }
+                body {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100vh;
+                    margin: 0;
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                }
+                main {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    background-color: #ff7d04;
+                    padding: 2rem;
+                    border-radius: 1rem;
+                    width: 90%;
+                    max-width: 400px;
+                }
+                h2 {
+                    margin-bottom: 1rem;
+                    color: white;
+                    font-size: 1.5rem;
+                    text-align: center;
+                }
+                .lista-cadastro {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    align-items: center;
+                }
+                .lista-cadastro input {
+                    border: 1px solid #ccc;
+                    display: block;
+                    margin-bottom: 1rem;
+                    padding: 0.5rem;
+                    border-radius: 0.5rem;
+                    width: 100%;
+                }
+                .lista-cadastro .botao_cadastrar {
+                    display: flex;
+                    justify-content: center;
+                    padding: 0.5rem 1rem;
+                    border-radius: 0.5rem;
+                    cursor: pointer;
+                    background-color: #fff;
+                    border: 1px solid #ccc;
+                }
+                .lista-cadastro input[type=submit] {
+                    font-size: 1rem;
+                    background-color: cornflowerblue;
+                    font-weight: bold;
+                    color: #FFF;
+                }
+
+            </style>
+        </head>
+        <main>
+            <header>
+                <h2>App Lista de SuperMercado</h2>
+            </header>
+            <div class="lista-cadastro">
+                <input class="nome_produto" type="text" placeholder="Nome do Produto..." name="nome_produto">
+                <input class="valor_produto" type="text" placeholder="Valor do Produto..." name="valor_produto">
+                <div class="secao_cadastrar">
+                    <input class="botao_cadastrar" type="submit" value="Cadastrar" name="acao">
+                </div>
+            </div>
+
+        </main>
+        
+        <div class="lista-produtos">
+            <div class="lista-produtos-single">
+                <h3>RedBull</h3>
+                <span>R$20,00</span>
+            </div>
+            <div class="lista-produtos-single">
+                <h3>RedBull</h3>
+                <span>R$20,00</span>
+            </div>
+            <div class="lista-produtos-single">
+                <h3>RedBull</h3>
+                <span>R$20,00</span>
+            </div>
+        </div>
+        
+        <script>
+
+        </script>
+    </body>
+</html>
